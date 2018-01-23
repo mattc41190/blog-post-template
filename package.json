@@ -1,0 +1,19 @@
+{
+  "name": "blog-post-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pug": "pug index.pug -o build",
+    "stylus": "stylus style.styl -o build/style.css",
+    "build": "npm run stylus && npm run pug",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "pug-cli": "^1.0.0-alpha6",
+    "stylus": "^0.54.5"
+  }
+}

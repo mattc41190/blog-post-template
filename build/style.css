@@ -1,0 +1,63 @@
+/*
+  el
+    whitespace-control: margin, padding
+    position-contorl: position, display, text-align
+    font-control: size, family, etc...
+    color-control: hex
+*/
+html,
+body {
+  margin: 0%;
+  font-family: 'Raleway', sans-serif;
+  background-color: #fff;
+}
+::selection {
+  background: #fcbdc0;
+}
+::-moz-selection {
+  background: #fcbdc0;
+}
+.blog-header {
+  text-align: center;
+  background: #e6e2dd;
+}
+.blog-header .blog-title {
+  margin-top: 0%;
+  padding-top: 5%;
+  font-size: 230%;
+  color: #a38175;
+}
+.blog-header .blog-tagline {
+  margin-bottom: 0%;
+  padding-bottom: 5%;
+  font-size: 130%;
+  color: #fd4f57;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+.blog-content-container {
+  margin: 0% auto;
+  width: 85%;
+  height: 100vh;
+}
+.content {
+  margin: 0%;
+  padding: 2%;
+}
+@media (min-width: 1000px) {
+  .blog-header .blog-title {
+    font-size: 400%;
+  }
+  .blog-header .blog-tagline {
+    font-size: 200%;
+  }
+  .blog-content-container {
+    width: 60%;
+    max-width: 900px;
+  }
+  .blog-content-container .content {
+    font-size: 120%;
+  }
+  .blog-content-container .blog-point {
+    font-size: 140%;
+  }
+}

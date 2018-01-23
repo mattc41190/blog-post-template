@@ -1,0 +1,78 @@
+// LAYOUT
+/*
+  el
+    whitespace-control: margin, padding
+    position-contorl: position, display, text-align
+    font-control: size, family, etc...
+    color-control: hex
+*/
+
+// COLORS
+light-brown= #E6E2DD
+dark-brown= #A38175
+dark-pink= #FD4F57
+light-pink= #FCBDC0
+
+// Default - Mobile
+
+html, body
+  margin 0%
+  font-family 'Raleway', sans-serif
+  background-color white
+
+::selection
+  background light-pink
+
+::-moz-selection
+  background light-pink
+
+.blog-header
+  text-align center
+  background light-brown
+
+
+.blog-header .blog-title
+  margin-top 0%
+  padding-top 5%
+  font-size 230%
+  color dark-brown
+
+.blog-header .blog-tagline
+  margin-bottom 0%
+  padding-bottom 5%
+  font-size 130%
+  color dark-pink
+  font-family 'PT Sans Narrow', sans-serif
+
+
+.blog-content-container
+  margin 0% auto
+  width 85%
+  height 100vh
+
+.content
+  margin 0%
+  padding 2%
+
+// Tablet
+@media (min-width 500px){}
+
+// Desktop
+
+@media (min-width 1000px)
+
+  .blog-header .blog-title
+    font-size 400%
+
+  .blog-header .blog-tagline
+    font-size 200%
+
+  .blog-content-container
+    width 60%
+    max-width 900px
+
+  .blog-content-container .content
+    font-size 120%
+
+  .blog-content-container .blog-point
+    font-size 140%
